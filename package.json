@@ -1,0 +1,26 @@
+{
+  "name": "jayme",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "docker:up": "docker compose up -d",
+    "generate": "bun drizzle-kit generate",
+    "migrate": "bun drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "@types/bun": "^1.1.14",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.2",
+    "hono": "^4.6.14",
+    "pg": "^8.13.1",
+    "postgres": "^3.4.5",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.30.1",
+    "tsx": "^4.7.1"
+  }
+}
